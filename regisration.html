@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to Kumasi Technical University</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <style>
+    header{
+      background-color: black;
+      position: relative;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    main{
+      height: auto;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+
+    form input, form select{
+      width: 40%;
+      padding: 7px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <a href="index.html" class="site-logo" aria-label="homepage">Kumasi Technical University</a>
+    </header>
+
+    <main>
+      <h1 style="text-align: center;">Register</h1>
+	
+      <form action="">
+        <input type="text" placeholder="Student Number">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <label for="start">Date of Birth:</label>
+
+        <input type="date" id="start" name="birth-year"
+            value="2004-01-01"
+            min="1950-01-01" max="2006-01-01">
+
+            <label for="">Faculty</label>
+
+            <select name="" id="">
+              <option value="">Business School</option>
+              <option value="">Faculty of Applied Sciences and Technology</option>
+              <option value="">Faculty of Creative Arts and Technology</option>
+              <option value="">Faculty of Engineering and Technology</option>
+              <option value="">Faculty of Health Sciences</option>
+              <option value="">Faculty of Entrepreneurship and Enterprise Development</option>
+            </select>
+  
+            <label for="">Department</label>
+  
+            <select name="" id="">
+              <option value="">Department of Hotel, Catering and Institutional Management</option>
+              <option value="">Department of Statistical Sciences</option>
+              <option value="">Department of Computer Science</option>
+              <option value="">Department of Food Technology</option>
+              <option value="">Department of Information Science</option>
+              <option value="">Department of Mathematical Sciences</option>
+            </select>
+
+            <input type="text" placeholder="Phone Number">
+
+            <input type="text" placeholder="Address">
+
+            <label for="">Picture</label>
+
+            <input type="file" accept="image/*" name="photo">
+      </form>    
+    </main>
+
+    <footer>
+      <div class="foot">
+        <h2>Contact Us</h2>
+        <a href="tel: +1245894738">Phone: +1245894738</a>
+        <a href="mailto: kumasitechnicaluniversity@gmail.com">Email: awesomeuniversity@gmail.com</a>
+      </div>
+      <div class="foot social_media">
+        <h2>Follow Us</h2>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="foot">
+        <h2>Newsletter</h2>
+        <input style="padding: 7px 6px;" type="text" placeholder="Enter your email" name="">
+        <a href="">Subscribe</a>
+      </div>
+    </footer>
+    <p style="text-align: center;">Copyright kumasitechncaluniversity &copy2024 All rights reserved</p>
+  </body>
+</html>

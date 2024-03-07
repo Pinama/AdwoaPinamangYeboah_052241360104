@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Search results for ...</title>
+	<link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="search.css" />
+</head>
+<body>
+	<header>
+      <a href="index.html" class="site-logo" aria-label="homepage">Moviez Hub</a>
+      <nav class="account">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--btn" href="#">Login</a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              class="nav__link nav__link--btn nav__link--btn--highlight"
+              href="#"
+              >Join</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <form id="searchForm" action="search.html?search=aa" method="get">
+		  <input type="text" name="" placeholder="Search for movie..." id="searchInputField">
+		  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+	</form>
+
+	<h4 style="text-align: center; margin: 25px 0 0 0;" id="movie_title">Results for "Search..."</h4>
+
+  <div class="movieSearchResults spinning">
+    <div class="loading"></div>
+    <div class="error_message">
+      <img src="roy.gif" alt="">
+      <h3>Failed to retrieve results, check your internet connection, sorry amigo😢</h3>
+    </div>
+  </div>
+
+  <div class="pagination"></div>
+
+  <footer>
+    <div class="foot">
+      <h2>Contact Us</h2>
+      <a href="tel: +1245894738">Phone: +1245894738</a>
+      <a href="mailto: moviezhub@gmail.com">Email: moviezhub@gmail.com</a>
+    </div>
+    <div class="foot social_media">
+      <h2>Follow Us</h2>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+    <div class="foot">
+      <h2>Newsletter</h2>
+      <input style="padding: 7px 6px;" type="text" placeholder="Enter your email" name="">
+      <a href="">Subscribe</a>
+    </div>
+  </footer>
+  <p style="text-align: center;">Copyright MoviezHub &copy2023 All rights reserved</p>
+
+  <script type="text/javascript" src="search.js"></script>
+</body>
+</html>
